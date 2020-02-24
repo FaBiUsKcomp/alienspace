@@ -1,0 +1,15 @@
+header.logo {
+    grid-area: logo;
+}
+
+nav.nav {
+    grid-area: nav;
+}
+
+aside.content {
+    grid-area: content;
+}
+
+footer.footer {
+    grid-area: footer;
+}

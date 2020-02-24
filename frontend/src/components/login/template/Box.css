@@ -1,0 +1,55 @@
+div.box {
+    min-width: 40vw;
+    min-height: 400px;
+    max-width: 500px;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+    border-radius: 7px;
+    font-family: var(--font-family);
+}
+
+div.box h1 {
+    text-align: start;
+    padding: 5px 10px;
+    color: #333;
+    display: flex;
+}
+
+div.box h1 img {
+    width: 40px;
+}
+
+@media only screen and (max-width: 769px) {
+    div.box {
+        width: 95vw;
+        height: 40vh;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    div.box {
+        width: 95vw;
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    div.box {
+        width: 95vw;
+        height: 55vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    div.box {
+        width: 95vw;
+        height: 65vh;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    div.box {
+        width: 95vw;
+        height: 85vh;
+    }
+}

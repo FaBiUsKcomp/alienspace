@@ -1,0 +1,12 @@
+aside.content {
+    display: flex;
+    overflow-y: scroll;
+    transition: .3s;
+    animation-name: home-init;
+    animation-duration: 2s;
+}
+
+
+@keyframes home-init {
+    from{ opacity: .2; } to{ opacity: 1; }
+}

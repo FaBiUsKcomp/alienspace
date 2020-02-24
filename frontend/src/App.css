@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
+
+:root {
+    --bg-color: linear-gradient(to right, #00d2ff, #3a7bd5);
+    --bg-link: linear-gradient(to right, #7671ee, #7760dd, #774ecc, #763cba, #7526a8);
+    --font-family: 'Roboto', sans-serif;
+    --font-link: 'Montserrat', sans-serif;
+    --font-logo: 'Space Mono', monospace;
+    --shadow: 5px 5px 30px rgba(68,68,68,.66);
+    --border: 1px #3334 solid;
+    --nav-width: 15vw;
+    --nav-height: 150px;
+    --footer-height: 60px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Padrão container */
+
+.container {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bg-gradient {
+    background: var(--bg-color);
+}
+
+.bg-image-gradient {
+    background-image: var(--bg-link);
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.d-grid {
+    display: grid;
+    grid-template-columns: var(--nav-width) 1fr;
+    grid-template-rows: var(--nav-height) 1fr var(--footer-height);
+    grid-template-areas: 
+        "logo content"
+        "nav content"
+        "nav footer";
+}
+
+.mt-3 {
+    margin-top: 30px;
+}
+
+.p-3 {
+    padding: 30px;
+}

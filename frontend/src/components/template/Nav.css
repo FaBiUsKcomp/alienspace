@@ -1,0 +1,26 @@
+nav.nav {
+    background-color: whitesmoke;
+    font-family: var(--font-link);
+}
+
+nav.nav a {
+    display: block;
+    padding: 20px 30px;
+    margin: 0 auto;
+    color: #333;
+    text-align: start;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: .5s;
+}
+
+nav.nav a:hover {
+    background: linear-gradient(to right, #9d50bb, #7951B9);
+    color: #fff;
+}
+
+nav.nav a.active {
+    background: linear-gradient(to right, #9d50bb, #7951B9);
+    color: #fff;
+}

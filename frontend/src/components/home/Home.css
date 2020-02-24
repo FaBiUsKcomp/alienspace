@@ -1,0 +1,39 @@
+div.home {
+    margin: 3%;
+    flex: 1;
+    background-color: transparent;
+}
+
+div.introducion {
+    width: 100%;
+    height: 40%;
+    background-color: rgba(255,255,255,.6);
+    font-family: var(--font-family);
+    border-radius: 7px;
+}
+
+div.introducion h2 {
+    margin: 30px 10px;
+    color: #333;
+    font-size: 5vmin;
+}
+
+div.introducion h3 {
+    margin: 20px 10px;
+    color: #333;
+    font-size: 3vmin;
+}
+
+div.introducion hr {
+    width: 100%;
+}
+
+div.introducion-text {
+    flex: 1;
+    padding: 20px;
+}
+
+div.introducion-text p {
+    color: #333;
+    font-size: 2.5vmin;
+}

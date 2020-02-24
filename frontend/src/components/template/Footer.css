@@ -1,0 +1,12 @@
+footer.footer {
+    background-color: #EBDCF1;
+    display: flex;
+    justify-content: center;
+}
+
+footer.footer span {
+    margin: 0 20px;
+    width: 30%;
+    align-self: center;
+    color: #9D50BB;
+}

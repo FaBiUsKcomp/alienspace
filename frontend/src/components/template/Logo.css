@@ -1,0 +1,31 @@
+header.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+    flex-direction: column;
+}
+
+header a {
+    text-decoration: none;
+    font-family: var(--font-logo);
+    transition: .5s;
+}
+
+header a h1 {
+    font-size: 3.5vmin;
+    margin-bottom: 20px;
+}
+
+header a:hover {
+    transform: translateY(-2px);
+}
+
+header a:active {
+    color: #333;
+}
+
+header.logo img {
+    height: 65%;
+}

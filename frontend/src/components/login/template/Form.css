@@ -1,0 +1,86 @@
+form.form {
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    border-radius: 7px;
+    border: var(--border);
+    padding: 30px 10px 10px 10px;
+    display: block;
+}
+
+div.form-row {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-direction: row;
+}
+
+div.form-row label {
+    font-family: var(--font-family);
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    width: 100px;
+}
+
+div.form-row input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    border: 2px rgba(0, 0, 0, 0.2) solid;
+    border-radius: 7px;
+    outline: 0;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+div.form-row input::placeholder {
+    color: #3335;
+}
+
+div.form-row input:focus {
+    border: 2px #7f8c8d solid;
+    border-radius: 7px;
+}
+
+div.rowBtn {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.rowBtn button {
+    color: #fff;
+    border: none;
+    margin: 10px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 110px;
+    height: 40px;
+}
+
+.rowBtn button.send {
+    background: linear-gradient(to right, rgb(157, 80, 187), rgb(110, 72, 170));
+}
+
+.rowBtn button.cad {
+    background: #3498db;
+}
+
+.rowBtn button:active, button:focus {
+    outline: 0;
+}
+
+.rowBtn button:hover {
+    cursor: pointer;
+    opacity: .8;
+}

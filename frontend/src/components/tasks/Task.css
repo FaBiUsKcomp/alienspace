@@ -1,0 +1,167 @@
+div.tasks {
+    margin: 3%;
+    flex: 1;
+}
+
+div.taskmenu {
+    width: 100%;
+    height: 20%;
+    max-height: 150px;
+    background-color: rgba(255,255,255,.6);
+    border-radius: 7px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+div.taskmenu h2 {
+    width: 100%;
+    font-size: 17px;
+    font-weight: 600;
+    color: #333; 
+    font-family: var(--font-family);
+}
+
+div.taskmenu  p {
+    justify-self: flex-end;
+    color: #e74c3c;
+    font-size: 13px;
+    align-self: flex-end;
+    margin-right: 30px;
+}
+
+.taskcreate {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+}
+
+.taskcreate form {
+    flex: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.taskcreate form input {
+    width: 100%;
+    height: 35px;
+    max-height: 50px;
+    margin-right: 20px;
+    border: var(--border);
+    border-radius: 7px;
+    font-size: 16px;
+    padding-left: 20px;
+    background-color: rgba(255,255,255,.5);
+}
+
+.taskcreate form input::placeholder {
+    font-style: italic;
+}
+
+.taskcreate form input:focus {
+    outline: 0;
+}
+
+.taskcreate form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 7px;
+    font-weight: 600;
+    outline: 0;
+}
+
+.taskcreate form button:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+.taskcreate form button.taskclear {
+    color: #fff;
+    background-color: #3498db;
+}
+
+.taskcreate form button.tasksubmit {
+    color: #fff;
+    background-image: var(--bg-link);
+}
+
+div.taskContainer {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+}
+
+div.taskmanage {
+    background-color: rgba(255,255,255,.5);
+    flex: 1;
+    color: #333;
+    margin: 10px;
+    border-radius: 7px;
+    height: 100%;
+    min-height: 150px;
+    padding: 10px;
+    transition: .2s;
+}
+
+div.taskmanage p {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--font-family);
+}
+
+div.taskunity {
+    width: 100%;
+    min-height: 70px;
+    background-color: rgba(255, 255, 255, .7);
+    border: var(--border);
+    border-radius: 7px;
+    margin: 10px 0;
+    padding: 5px;
+    display: grid;
+    grid-template-rows: 1fr 15px;
+    grid-template-areas: 
+        "tasktext"
+        "taskoption";
+}
+
+div.taskunity p {
+    grid-area: tasktext;
+    font-family: var(--font-family);
+    font-style: italic;
+    font-weight: bold;
+}
+
+div.taskunity span {
+    grid-area: taskoption;
+    text-align: end;
+    color: #333;
+}
+
+div.taskunity:hover {
+    cursor: grab;
+}
+
+div.taskunity i:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.afazer {
+    color: #9b59b6;
+}
+
+.fazendo {
+    color: #e1b12c;
+}
+
+.feito {
+    color: #2ecc71;
+}
